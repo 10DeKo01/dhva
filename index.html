@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="img/logo.ico">
+  <title>Inicio - Diego Hidalgo Visual Art</title>
+  <link rel="stylesheet" href="css/index.css">
+  <meta name="keywords" content="Fotografia, Fotos, Fotografo, Fotógrafo, arte,">
+  <meta name="description" content="Portafolio Fotografico de Diego Hidalgo">
+  <meta name="author" content="Diego Hidalgo">
+</head>
+<body>
+  <nav>
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="servicio.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="slider">
+    <img src="img/slide1.jpg" class="slide active">
+    <img src="img/slide2.jpg" class="slide">
+    <img src="img/slide3.jpg" class="slide">
+  </div>
+
+  <section>
+    <h1>Bienvenidos a Diego Hidalgo Visual Art</h1>
+    <p>Capturamos la esencia de cada momento a través de nuestro lente. Nos especializamos en retratos, eventos y fotografía de productos, siempre con un enfoque profesional y creativo que resalta lo mejor de cada imagen.</p>
+  </section>
+
+  <footer>
+    © 2025 Fotografía Creativa - Todos los derechos reservados
+  </footer>
+
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll('.slide');
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000);
+  </script>
+</body>
+</html>
